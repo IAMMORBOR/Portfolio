@@ -1,0 +1,45 @@
+$color-black: #0000;
+ $color-dark-1:#21243D;
+ $color-dark-2:#142850;
+ $color-primary:#FF6464;
+ $color-secondary:#00A8CC;
+$color-grey-1:#EDF7FA;
+$color-grey-5:#E0E0E0;
+$color-light:#8695A4;
+
+
+/*  FONT STYLE VARIABLE*/
+$font-1:"Heebo", sans-serif;
+
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+
+    @media (max-width:75em){ /* 1rem == 9px : 9 /16 (1200px) */
+        font-size:56.2%;
+      }
+      @media (max-width:56.2em){ /* 1rem == 8px :8 /16  (900px)*/
+        font-size: 50%;
+      }
+      @media (max-width:37.5em){ /* 1rem == 8px :8 /16  (600px)*/
+        font-size: 45%;
+      }
+      @media (min-width:112.5em){ /* 1rem == 12px : 12 /16 (1800+px) */
+        font-size: 75%;
+      }
+}
+
+    body{
+        font-family:var($font-1);
+        font-weight: 400;
+        line-height: 1.6;
+        min-height: 100vh;
+    }
