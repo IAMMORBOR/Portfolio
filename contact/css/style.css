@@ -37,7 +37,8 @@ body {
   @media (max-width: 37.5em) {
     .map_section {
       /* 1rem == 8px :8 /16  (600px)*/
-      padding: 0; } }
+      padding: 0;
+      margin-top: -16px; } }
 
 .my_contact__section {
   width: 100%;

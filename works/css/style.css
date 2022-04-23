@@ -62,8 +62,7 @@ body {
 .hambugerMenu {
   justify-content: flex-end;
   margin-top: 1.8rem;
-  display: none;
-  padding: 15px; }
+  display: none; }
   @media (max-width: 37.5em) {
     .hambugerMenu {
       display: flex; } }
@@ -147,7 +146,7 @@ body {
     opacity: 1; } }
 
 .work_details {
-  width: 58rem;
+  width: 56%;
   margin: 0 auto; }
   .work_details__heading {
     font-family: "Heebo", sans-serif;
