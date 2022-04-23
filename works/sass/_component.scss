@@ -1,0 +1,55 @@
+.work_details{
+    width: 58rem;
+    // padding: 4rem;
+    margin: 0 auto;
+
+    &__heading{
+        font-family: $font-1;
+        color: $color-dark-1;
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        line-height: 3.5rem;
+
+    }
+    &--feature{
+        display: flex;
+       font-family: $font-1;
+       font-weight: 400;
+       margin-bottom: 1.5rem;
+
+       &-date{
+           font-size: 1rem;
+           font-family: inherit;
+           margin-right: 1.2rem;
+           color: #fff;
+           background-color: $color-primary-1;
+           padding: .3rem .8rem;
+           border-radius: 1.6rem;
+           width: 4rem;
+           height: 2rem;
+           display: flex;
+           justify-content: center;
+           align-self: center;
+           font-weight: 900;
+       }
+       &-job{
+        font-size: 1.2rem;
+        font-family: inherit;
+        color: $color-dark-1;
+        font-weight: 400;
+       }
+    }
+    &--text{
+        font-size: 1.8rem;
+        font-family: inherit;
+        font-weight: 400;
+        color: #000;
+        margin-bottom: 1.5rem;
+    }
+    &--img{
+        width: 65%;
+        height: 50%;
+        margin-bottom: 2.5rem;
+    }
+}

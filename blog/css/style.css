@@ -1,0 +1,203 @@
+/*  FONT STYLE VARIABLE*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      /* 1rem == 9px : 9 /16 (1200px) */
+      font-size: 60%; } }
+  @media (max-width: 56.2em) {
+    html {
+      /* 1rem == 8px :8 /16  (900px)*/
+      font-size: 56.2%; } }
+  @media (max-width: 37.5em) {
+    html {
+      /* 1rem == 8px :8 /16  (600px)*/
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      /* 1rem == 12px : 12 /16 (1800+px) */
+      font-size: 75%; } }
+
+body {
+  font-family: var("Heebo", sans-serif);
+  font-weight: 400;
+  line-height: 1.6;
+  min-height: 100vh; }
+
+@media (max-width: 37.5em) {
+  .nav_section {
+    display: none; } }
+
+.nav_section__ul {
+  padding: 2rem;
+  display: flex;
+  justify-content: end;
+  align-content: flex-end; }
+  .nav_section__ul--list {
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-right: 2rem;
+    font-family: inherit;
+    text-transform: capitalize; }
+    .nav_section__ul--list_link {
+      text-decoration: none;
+      color: #000; }
+      .nav_section__ul--list_link:hover {
+        color: #FF6464;
+        border-bottom: 2px solid #FF6464;
+        font-size: 2rem; }
+
+.hambugerMenu {
+  justify-content: flex-end;
+  margin-top: 1.8rem;
+  display: none;
+  padding: 15px; }
+  @media (max-width: 37.5em) {
+    .hambugerMenu {
+      display: flex; } }
+  .hambugerMenu-svg {
+    height: 6rem;
+    width: 6rem;
+    fill: #000; }
+
+.crossMenu {
+  position: absolute;
+  top: 2%;
+  left: 50%; }
+
+.crossMenu-svg {
+  height: 4rem;
+  width: 4rem;
+  fill: #fff;
+  height: 7rem;
+  width: 7rem; }
+
+.hambugerMenu-svg {
+  height: 7rem;
+  width: 7rem; }
+
+.mobile_nav {
+  height: 100vh;
+  width: 80%;
+  position: fixed;
+  top: 50%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  background-color: #FF6464;
+  display: none; }
+  .mobile_nav--ul {
+    list-style: none;
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-21%, -20%); }
+    .mobile_nav--ul-list {
+      font-size: 2.5rem;
+      font-family: "Heebo", sans-serif;
+      text-transform: uppercase;
+      align-self: center;
+      justify-self: center; }
+      .mobile_nav--ul-list__link {
+        text-decoration: none;
+        color: #fff; }
+
+.mobile_nav--ul-list__link:hover {
+  color: #FF6464; }
+
+.mobile_nav--ul-list__link:before {
+  content: ' ';
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  transform: scaleX(0);
+  animation: ani2 1s;
+  z-index: -1; }
+
+.mobile_nav--ul-list__link:hover:before,
+.mobile_nav--ul-list__link:focus:before {
+  animation: 1s forwards anil2 linear;
+  color: #FF6464; }
+
+@keyframes anil2 {
+  0% {
+    transform: scaleX(0);
+    height: 5px;
+    color: #fff; }
+  50% {
+    transform: scaleX(1);
+    height: 5px;
+    color: #FF6464;
+    opacity: 0.2; }
+  100% {
+    transform: scaleX(1.58);
+    height: 30px;
+    color: #FF6464;
+    opacity: 1; } }
+
+.blog {
+  margin: 0 auto;
+  width: 50.2rem;
+  padding: 2rem; }
+  .blog_heading, .blog_section--heading {
+    font-family: "Heebo", sans-serif;
+    text-transform: capitalize;
+    color: #21243D;
+    margin-bottom: 1.3rem; }
+  .blog_heading {
+    font-weight: 700;
+    font-size: 4.4rem; }
+  .blog_section--heading {
+    font-size: 2.3rem;
+    font-weight: 500; }
+    .blog_section--heading-feature {
+      display: flex; }
+      .blog_section--heading-feature--time, .blog_section--heading-feature--job {
+        font-family: "Heebo", sans-serif;
+        font-weight: 400; }
+      .blog_section--heading-feature--job {
+        font-size: 1.1rem;
+        color: #8695A4;
+        margin-left: 1.2rem; }
+      .blog_section--heading-feature--time {
+        font-size: 1.3rem;
+        color: #21243D;
+        margin-right: 1.2rem; }
+      .blog_section--heading-feature--text {
+        font-size: 2rem;
+        font-size: "Heebo", sans-serif;
+        font-weight: 400;
+        color: #21243D; }
+
+.empty {
+  border-right: 1px solid #000; }
+
+.blog__section--empty {
+  height: .1rem;
+  width: 60rem;
+  background-color: #E0E0E0;
+  margin: 1rem 0 2.2rem -77px; }
+
+.footer_section {
+  padding: 3rem;
+  text-align: center; }
+  .footer_section--link {
+    text-decoration: none;
+    margin-right: 1.2rem; }
+    .footer_section--link-social {
+      height: 2.5rem;
+      width: 2.5rem; }
+  .footer_section--text {
+    font-family: "Heebo", sans-serif;
+    font-size: 1.1rem;
+    color: #21243D;
+    font-weight: 400;
+    margin-top: 1.5rem; }

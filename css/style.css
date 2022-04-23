@@ -51,30 +51,43 @@ body {
     .nav_section__ul--list_link {
       text-decoration: none;
       color: #000; }
+      .nav_section__ul--list_link:hover {
+        color: #FF6464;
+        border-bottom: 2px solid #FF6464;
+        font-size: 2rem; }
 
-.hambugerMenu,
-.crossMenu {
+.hambugerMenu {
   justify-content: flex-end;
   margin-top: 1.8rem;
-  display: none; }
+  display: none;
+  padding: 15px; }
   @media (max-width: 37.5em) {
-    .hambugerMenu,
-    .crossMenu {
+    .hambugerMenu {
       display: flex; } }
-  .hambugerMenu-svg,
-  .crossMenu-svg {
-    height: 4rem;
-    width: 4rem;
+  .hambugerMenu-svg {
+    height: 6rem;
+    width: 6rem;
     fill: #000; }
+
+.crossMenu {
+  position: absolute;
+  top: 2%;
+  left: 55%; }
 
 .crossMenu-svg {
   height: 4rem;
   width: 4rem;
-  fill: #fff; }
+  fill: #fff;
+  height: 7rem;
+  width: 7rem; }
+
+.hambugerMenu-svg {
+  height: 7rem;
+  width: 7rem; }
 
 .mobile_nav {
   height: 100vh;
-  width: 30%;
+  width: 80%;
   position: fixed;
   top: 50%;
   left: 85%;
@@ -84,17 +97,51 @@ body {
   .mobile_nav--ul {
     list-style: none;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    top: 20%;
+    left: 50%;
+    transform: translate(-21%, -20%); }
     .mobile_nav--ul-list {
-      font-size: 2rem;
+      font-size: 2.5rem;
       font-family: "Heebo", sans-serif;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      align-self: center;
+      justify-self: center; }
       .mobile_nav--ul-list__link {
         text-decoration: none;
         color: #fff; }
+
+.mobile_nav--ul-list__link:hover {
+  color: #FF6464; }
+
+.mobile_nav--ul-list__link:before {
+  content: ' ';
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  transform: scaleX(0);
+  animation: ani2 1s;
+  z-index: -1; }
+
+.mobile_nav--ul-list__link:hover:before,
+.mobile_nav--ul-list__link:focus:before {
+  animation: 1s forwards anil2 linear;
+  color: #FF6464; }
+
+@keyframes anil2 {
+  0% {
+    transform: scaleX(0);
+    height: 5px;
+    color: #fff; }
+  50% {
+    transform: scaleX(1);
+    height: 5px;
+    color: #FF6464;
+    opacity: 0.2; }
+  100% {
+    transform: scaleX(1.58);
+    height: 30px;
+    color: #FF6464;
+    opacity: 1; } }
 
 .personal_info {
   display: flex;

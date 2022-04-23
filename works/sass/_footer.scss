@@ -1,0 +1,24 @@
+.footer_section{
+    padding: 3rem;
+      text-align: center;
+      margin-top: 3rem;
+  
+      &--link{
+          text-decoration: none;
+          margin-right: 1.2rem;
+          
+  
+          &-social{
+              height: 2.5rem;
+              width: 2.5rem;
+          }
+      }
+      &--text{
+          font-family: $font-1;
+          font-size: 1.1rem;
+          color:$color-dark-1;
+          font-weight: 400;
+          margin-top: 1.5rem;
+      }
+      
+  }

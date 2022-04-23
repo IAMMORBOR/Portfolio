@@ -1,0 +1,14 @@
+{
+  "name": "work",
+  "version": "1.0.0",
+  "description": "portfolio blog section",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "IAMMORBOR",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

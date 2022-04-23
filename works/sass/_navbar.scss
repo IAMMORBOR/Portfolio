@@ -1,15 +1,14 @@
 .nav_section{
-  
     @media (max-width:37.5em){ 
-       display: none;
-      }
+        display: none;
+       }
 
     &__ul{
         padding: 2rem;
         display: flex;
         justify-content: end;
         align-content: flex-end;
-        
+  
         &--list{
             list-style: none;
             font-size: 1.5rem;
@@ -17,11 +16,11 @@
             margin-right:2rem;
             font-family: inherit;
             text-transform: capitalize;
-           
+
             &_link{
                 text-decoration: none;
                 color: #000;
-                
+
                 &:hover{
                     color: $color-primary;
                     border-bottom: 2px solid $color-primary;
@@ -50,7 +49,7 @@
 .crossMenu{
 position: absolute;
 top: 2%;
-left: 55%;
+left: 50%;
 }
 .crossMenu-svg{
     height: 4rem;
@@ -121,7 +120,6 @@ left: 55%;
          height: 5px;
          color: #fff;
          
-         
     }
     50%{
          transform: scaleX(1);
@@ -139,4 +137,3 @@ left: 55%;
 
 
 }
-
