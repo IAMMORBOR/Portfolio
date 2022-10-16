@@ -71,7 +71,7 @@ body {
 
 .crossMenu {
   position: absolute;
-  top: 2%;
+  top: 4%;
   left: 55%; }
 
 .crossMenu-svg {
@@ -152,7 +152,8 @@ body {
       flex-direction: column-reverse;
       text-align: center;
       justify-content: center;
-      align-items: center; } }
+      align-items: center;
+    overflow: hidden; } }
   .personal_info--heading {
     color: #21243D;
     font-size: 4rem;
@@ -335,7 +336,7 @@ body {
       height: 9.3rem; }
       @media (max-width: 37.5em) {
         .work__section--content-body__text {
-          width: 43rem; } }
+          width: 38rem;} }
 
 .footer_section {
   padding: 3rem;

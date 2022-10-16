@@ -151,7 +151,8 @@
         &--text{
             font-size: 1.6rem;
             font-family: inherit;
-            color: $color-dark-1;
+           // color: $color-dark-1;
+
         }
     }
 }
@@ -268,11 +269,15 @@
             height: 9.3rem;
     
             @media (max-width:37.5em){ 
-                width: 43rem;
+                width: 30rem;
+               
                
              }
         }
     }
   
+}
+.work__section--content-body__text{
+    color: red;
 }
 

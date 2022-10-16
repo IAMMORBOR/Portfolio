@@ -50,39 +50,6 @@ document.querySelector('#crossMenu').addEventListener ('click', function(){
 
 
 
-// function hamburgerMenu(){
-//     let menu = document
-// }
-
-// menu.addEventListener('click',() =>{
-//     mobile_nav.style.left = '100%';
-//     mobile_nav.style.left = '0';
-// })
-
-
-
-
-// if (profileMedia.matches ) {
-//     document.querySelection(".personal_info--img-1").style.display ="none";
-  
-   
-// }
-
-// var mainPage = document.querySelector('#Work').style.color = 'none';
-//                document.querySelector('#blog').style.color = 'none';
-//                document.querySelector('#contact').style.color = 'none';
-
-// // var active = document.querySelector('#Work').style.color = 'red';
-// //              document.querySelector('#blogs').style.color = 'red';
-// //              document.querySelector('#contact').style.color = 'red';
-
-// document.querySelector('#Work').addEventListener('click', function(){
-//     if(mainPage){
-//         document.querySelector('#Work').style.color = 'red';
-
-//     }
-   
-// })
 
 
 
