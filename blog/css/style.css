@@ -67,7 +67,8 @@ body {
   .hambugerMenu-svg {
     height: 6rem;
     width: 6rem;
-    fill: #000; }
+    fill: #000; 
+  }
 
 .crossMenu {
   position: absolute;
@@ -83,7 +84,7 @@ body {
 
 .hambugerMenu-svg {
   height: 7rem;
-  width: 7rem; }
+  width: 6rem; }
 
 .mobile_nav {
   height: 100vh;
@@ -146,7 +147,15 @@ body {
 .blog {
   margin: 0 auto;
   width: 50.2rem;
-  padding: 2rem; }
+  padding: 2rem; 
+
+}
+@media (max-width: 37.5em) {
+  .blog {
+    overflow: hidden;
+  }
+    
+}
   .blog_heading, .blog_section--heading {
     font-family: "Heebo", sans-serif;
     text-transform: capitalize;
@@ -175,7 +184,8 @@ body {
         font-size: 2rem;
         font-size: "Heebo", sans-serif;
         font-weight: 400;
-        color: #21243D; }
+        color: #21243D;
+      }
 
 .empty {
   border-right: 1px solid #000; }

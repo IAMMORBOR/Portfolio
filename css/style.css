@@ -153,7 +153,8 @@ body {
       text-align: center;
       justify-content: center;
       align-items: center;
-    overflow: hidden; } }
+    overflow: hidden; 
+  } }
   .personal_info--heading {
     color: #21243D;
     font-size: 4rem;
@@ -256,7 +257,9 @@ body {
   .post__box--text {
     font-size: 1.6rem;
     font-family: inherit;
-    color: #21243D; }
+    color: #21243D;
+    
+   }
 
 .empty {
   border-right: 1px solid #000; }
@@ -269,6 +272,12 @@ body {
 
 .work__section {
   padding: 2rem 4rem 4rem 4rem; }
+  @media (max-width: 37.5em) {
+    .work__section {
+      overflow: hidden;
+    }
+
+  }
   .work__section--empty {
     height: .1rem;
     width: 89rem;
@@ -278,7 +287,7 @@ body {
       .work__section--empty {
         margin: 0rem 0rem 2.2rem 0rem;
         width: 50rem; } }
-  .work__section--heading {
+    .work__section--heading {
     font-size: 2rem;
     color: #21243D;
     font-weight: 400;
@@ -333,10 +342,15 @@ body {
       font-family: "Heebo", sans-serif;
       color: #21243D;
       width: 50.7rem;
-      height: 9.3rem; }
+      height: 9.3rem;
+       }
       @media (max-width: 37.5em) {
         .work__section--content-body__text {
-          width: 38rem;} }
+          width: 35rem;
+        }
+      
+      }
+   
 
 .footer_section {
   padding: 3rem;
